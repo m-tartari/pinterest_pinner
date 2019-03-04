@@ -1,12 +1,12 @@
 # pinterest-pinner
-This script  publishes all photos from a selected album into a target Pinterest board using the Pinterest API. It has been made for [Compagnia d'arme del Santo Luca](http://www.compagniadarmedelsantoluca.it/) but can be easily adapted to be used for any website.
+This script  publishes all photos from a selected page into a target Pinterest board using the Pinterest API. It has been custom made for [Compagnia d'arme del Santo Luca](http://www.compagniadarmedelsantoluca.it/) but can be easily adapted to be used for any website.
 
 ## Download
 this project can by downloaded using:
 ```
 git clone https://github.com/m-tartari/pinterest-pinner.git
 ```
-and run using
+and run using:
 ```
 python3 pinner.py
 ```
