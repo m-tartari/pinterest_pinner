@@ -20,4 +20,4 @@ Before using this script you need to edit the data.json file. It should contain:
   "access_token": "put_here_your_pinterest_access_token"
 }
 ```
-The access token can be generated using [postman](https://www.getpostman.com/) and following the [official guidelines](https://developers.pinterest.com/docs/api/overview/)
+The access token can be generated using [postman](https://www.getpostman.com/) and following [Pinterest API official guidelines](https://developers.pinterest.com/docs/api/overview/).
