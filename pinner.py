@@ -2,6 +2,7 @@
 # \author  Michele Tartari
 # \date    04/03/2019
 # this file can be modified to work on any website by properly modifying lines 38:40
+import sys
 import json
 import requests
 import urllib
@@ -32,12 +33,14 @@ for item in board_list['data']:
 
 # generate url for api request to generate pins
 api_request_url = "https://api.pinterest.com/v1/pins/?access_token=" + access_token
-# + "&fields=id%2Clink%2Cnote%2Curl"
 
 # finds all image urls from page and save them
+print("Working on it...")
+i = 0
+total = len(soup.find_all('a', {"class": "fbPhoto"}))
 for link in soup.find_all('a', {"class": "fbPhoto"}):
     the_href = str(link.get('href'))
-    the_caption = str(link.get('title'))
+    the_caption = soup.title.text+" "+str(link.get('title'))
 
     # create json request for pintest
     payload = {
@@ -47,4 +50,11 @@ for link in soup.find_all('a', {"class": "fbPhoto"}):
         "link": the_album
     }
     r = requests.post(api_request_url, json=payload)
-    print(r.text)
+    i = i+1
+    progres = i/total*100
+
+    sys.stdout.write('\x1b[1A') # CURSOR_UP_ONE_LINE
+    sys.stdout.write('\x1b[2K') # ERASE_LINE
+    print("Working on it... Done "+"{0:.1f}".format(progres)+"%")
+
+print("Finished, Pinned "+str(i)+" images")
