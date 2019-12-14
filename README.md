@@ -1,5 +1,5 @@
-# pinterest-pinner
-This script  publishes all photos from a selected page into a target Pinterest board using the Pinterest API. It has been custom made for [Compagnia d'arme del Santo Luca](http://www.compagniadarmedelsantoluca.it/) but can be easily adapted to be used for any website.
+# Pinterest Pinner
+This script publishes all photos from a selected page into a target Pinterest board using the Pinterest API. It has been custom made for [Compagnia d'arme del Santo Luca](http://www.compagniadarmedelsantoluca.it/) but can be easily adapted to be used for any website.
 
 ## Download
 this project can by downloaded using:
