@@ -1,7 +1,7 @@
 # \file    pinner.py
 # \author  Michele Tartari
 # \date    04/03/2019
-# this file can be modified to work on any website by properly modifying lines 38:40
+# this file can be modified to work on any website by properly modifying lines 39:42
 import sys
 import json
 import requests
@@ -14,7 +14,6 @@ with open("./data.json") as f:
 the_album = json_obj["the_album"]
 access_token = json_obj["access_token"]
 board_name = json_obj["board_name"]
-#board_id = "3659312136482758"
 
 the_page = urllib.request.urlopen(the_album)
 soup = BeautifulSoup(the_page, "html.parser")
